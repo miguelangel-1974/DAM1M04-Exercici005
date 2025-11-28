@@ -1,0 +1,40 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Raleway, sans-serif;
+    display: flex;
+    background: #f0f0f0;
+}
+
+/* MENÚ LATERAL */
+.menu-lateral {
+    width: 180px;
+    background: #1c1c1c;
+    color: white;
+    padding: 20px;
+    height: 100vh;          /* Ocupa toda la altura de la pantalla */
+    box-sizing: border-box;  /* Incluye padding dentro de la altura */
+    display: flex;
+    flex-direction: column;  /* Apila los elementos verticalmente */
+    justify-content: flex-start; /* Inicia desde arriba */
+    overflow: hidden;        /* Evita scroll */
+}
+
+.menu-lateral h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.menu-lateral a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    margin: 10px 0;
+
+    transition: color 1s, letter-spacing 1s;
+}
+
+.menu-lateral a:hover {
+    color: #ffcc00;
+    letter-spacing: 6px;
+}
