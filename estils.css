@@ -12,29 +12,62 @@ body {
     background: #1c1c1c;
     color: white;
     padding: 20px;
-    height: 100vh;          /* Ocupa toda la altura de la pantalla */
-    box-sizing: border-box;  /* Incluye padding dentro de la altura */
+    height: 100vh;
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column;  /* Apila los elementos verticalmente */
-    justify-content: flex-start; /* Inicia desde arriba */
-    overflow: hidden;        /* Evita scroll */
+    flex-direction: column;
 }
 
 .menu-lateral h2 {
     margin-top: 0;
-    margin-bottom: 15px;
 }
 
 .menu-lateral a {
-    display: block;
     color: #ddd;
     text-decoration: none;
     margin: 10px 0;
-
-    transition: color 1s, letter-spacing 1s;
+    transition: 0.6s;
 }
 
 .menu-lateral a:hover {
     color: #ffcc00;
-    letter-spacing: 6px;
+    letter-spacing: 3px;
+}
+
+/* CONTENEDOR GENERAL */
+.contenidor {
+    flex: 1;
+}
+
+/* HERO */
+.hero {
+    padding: 80px 40px;
+    background: url(assets/img/play_station.png) center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.btn-hero {
+    background: rgba(0,0,0,0.4);
+    border: 2px solid white;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.btn-hero:hover {
+    transform: scale(1.1);
+    background: rgba(255,255,255,0.2);
 }
