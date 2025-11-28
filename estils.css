@@ -71,3 +71,44 @@ body {
     transform: scale(1.1);
     background: rgba(255,255,255,0.2);
 }
+
+/* TARJETAS */
+.targetes {
+    display: flex;
+    gap: 25px;
+    padding: 40px;
+}
+
+.caixa {
+    width: 260px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 5px #aaa;
+    transition: 1s;
+}
+
+.caixa img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 1.5s;
+}
+
+.caixa:hover {
+    transform: translateY(50px);
+    background: #8f8f8f;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.caixa:hover img {
+    opacity: 0.3;
+}
+
+/* TIMING FUNCTIONS */
+.t-linear { transition-timing-function: linear; }
+.t-ease-in { transition-timing-function: ease-in; }
+.t-ease-out { transition-timing-function: ease-out; }
