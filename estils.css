@@ -1,4 +1,6 @@
-/* GENERAL */
+/* --------------------------------------------- */
+/* GENERAL                                       */
+/* --------------------------------------------- */
 body {
     margin: 0;
     font-family: Raleway, sans-serif;
@@ -8,14 +10,16 @@ body {
 
 /* MENÚ LATERAL */
 .menu-lateral {
-    width: 180px;
-    background: #1c1c1c;
+    width: 190px;
+    background: #1d1d1f;
     color: white;
-    padding: 20px;
-    height: 100vh;
+    padding: 25px 15px;
+    min-height: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0;
 }
 
 .menu-lateral h2 {
@@ -39,7 +43,9 @@ body {
     flex: 1;
 }
 
-/* HERO */
+/* --------------------------------------------- */
+/* HERO (PÀGINA INDEX)                            */
+/* --------------------------------------------- */
 .hero {
     padding: 80px 40px;
     background: url(assets/img/play_station.png) center/cover;
@@ -72,7 +78,7 @@ body {
     background: rgba(255,255,255,0.2);
 }
 
-/* TARJETAS */
+/* TARGETES (INDEX) */
 .targetes {
     display: flex;
     gap: 25px;
