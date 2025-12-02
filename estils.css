@@ -1,3 +1,6 @@
+/* ---------------------------------------------------- */
+/* ESTILS GENERALS                                      */
+/* ---------------------------------------------------- */
 body {
     margin: 0;
     font-family: Raleway, sans-serif;
@@ -5,7 +8,9 @@ body {
     background: #f0f0f0;
 }
 
-/* MENÚ LATERAL */
+/* ---------------------------------------------------- */
+/* MENÚ LATERAL                                          */
+/* ---------------------------------------------------- */
 .menu-lateral {
     width: 190px;
     background: #1d1d1f;
@@ -30,11 +35,16 @@ body {
     letter-spacing: 3px;
 }
 
-/* CONTENEDOR GENERAL */
+/* ---------------------------------------------------- */
+/* CONTENIDOR GENERAL (espai on va el contingut)        */
+/* ---------------------------------------------------- */
 .contenidor {
     flex: 1;
 }
 
+/* ---------------------------------------------------- */
+/* HERO (PORTADA INDEX)                                 */
+/* ---------------------------------------------------- */
 .hero {
     padding: 80px 40px;
     background: url(assets/img/play_station.png) center/cover;
@@ -46,6 +56,7 @@ body {
     margin: 0;
 }
 
+/* Botó del hero */
 .btn-hero {
     background: rgba(0,0,0,0.4);
     border: 2px solid white;
@@ -62,13 +73,16 @@ body {
     background: rgba(255,255,255,0.2);
 }
 
-/* TARGETES (INDEX) */
+/* ---------------------------------------------------- */
+/* TARGETES DE LA PÀGINA INDEX                          */
+/* ---------------------------------------------------- */
 .targetes {
     display: flex;
     gap: 25px;
     padding: 40px;
 }
 
+/* Caixa base reutilitzable */
 .caixa {
     width: 260px;
     background: white;
@@ -79,6 +93,7 @@ body {
     transition: 1s;
 }
 
+/* Imatges dins les targetes */
 .caixa img {
     width: 100%;
     height: 340px;
@@ -86,22 +101,27 @@ body {
     transition: 1.5s;
 }
 
+/* Efecte hover targetes */
 .caixa:hover {
     transform: translateY(50px);
     background: #8f8f8f;
 }
 
-/* TIMING FUNCTIONS */
+/* ---------------------------------------------------- */
+/* FUNCIONS DE TEMPS DE TRANSICIÓ                       */
+/* ---------------------------------------------------- */
 .t-linear { transition-timing-function: linear; }
 .t-ease-in { transition-timing-function: ease-in; }
 .t-ease-out { transition-timing-function: ease-out; }
 
-
-/* PAGINA GALERIA */
+/* ---------------------------------------------------- */
+/* PÀGINA GALERIA                                       */
+/* ---------------------------------------------------- */
 .galeria {
     padding: 40px;
 }
 
+/* Caixa general de la galeria */
 .caixa-galeria {
     max-width: 1600px;
     background: white;
@@ -111,6 +131,7 @@ body {
     box-shadow: 0 0 5px #aaa;
 }
 
+/* Imatge específica de la galeria */
 .galeria-img {
     width: 300px;
     height: 450px;
@@ -118,11 +139,13 @@ body {
     transition: 1.5s;
 }
 
+/* Títol principal de la galeria */
 .titol-galeria {
     margin-left: 40px;
     font-size: 2.5rem;
 }
 
+/* Contenidor de targetes de la galeria */
 .targetes-galeria {
     color:black;
     display: flex;
@@ -131,6 +154,7 @@ body {
     padding: 40px;
 }
 
+/* Mode columna (scroll vertical) */
 .targetes-galeria.columna {
     display: flex;
     flex-direction: column;
@@ -138,6 +162,7 @@ body {
     padding: 60px 0;
 }
 
+/* Targetes ampliades dins galeria columna */
 .targetes-galeria.columna .caixa {
     width: calc(100% - 120px);
     margin: 0 auto;
@@ -145,6 +170,9 @@ body {
     padding: 35px;
 }
 
+/* ---------------------------------------------------- */
+/* LOADER CSS                                            */
+/* ---------------------------------------------------- */
 .loader {
     width: 60px;
     height: 60px;
@@ -155,10 +183,14 @@ body {
     animation: spin 1s linear infinite;
 }
 
+/* Animació del loader */
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
 
+/* ---------------------------------------------------- */
+/* BLOC ANIMAT PRINCIPAL (GALERIA)                      */
+/* ---------------------------------------------------- */
 .bloc-animat {
     width: 120px;
     height: 120px;
@@ -168,6 +200,7 @@ body {
     animation: bounceAndColor 3s ease-in-out infinite alternate;
 }
 
+/* Fotogrames de l'animació principal */
 @keyframes bounceAndColor {
     0% {
         transform: translateY(0) scale(1);
@@ -191,6 +224,9 @@ body {
     }
 }
 
+/* ---------------------------------------------------- */
+/* ANIMACIÓ SCROLL-REVEAL                               */
+/* ---------------------------------------------------- */
 .scroll-reveal {
     opacity: 0;
     transform: translateY(40px);
@@ -201,6 +237,7 @@ body {
     animation-range: entry 20% cover 40%;
 }
 
+/* Fotogrames reveal */
 @keyframes reveal {
     to {
         opacity: 1;
@@ -208,6 +245,9 @@ body {
     }
 }
 
+/* ---------------------------------------------------- */
+/* FALLBACK PER NAVEGADORS SENSE animation-timeline     */
+/* ---------------------------------------------------- */
 @supports not (animation-timeline: view()) {
     .scroll-reveal {
         opacity: 0;
@@ -218,4 +258,167 @@ body {
         from { opacity: 0; transform: translateY(40px); }
         to   { opacity: 1; transform: translateY(0); }
     }
+}
+
+/* ---------------------------------------------------- */
+/* PÀGINA GUIA D’ESTIL — TIPOGRAFIA I ICONES            */
+/* ---------------------------------------------------- */
+
+/* Contenidor de la pàgina */
+.estil {
+    padding: 40px;
+}
+
+/* CAIXA GENERAL */
+.caixa-estil {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 6px #bbb;
+    margin-bottom: 40px;
+}
+
+/* ---------------------------------------------------- */
+/* MOSTRARI DE TIPOGRAFIA                               */
+/* ---------------------------------------------------- */
+
+.font-test {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.font-test2 {
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+}
+
+.font-test3 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 0.3px;
+}
+
+.par-test {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+}
+
+.par-test-bold {
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.par-test-light {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+/* ---------------------------------------------------- */
+/* BASELINE ALIGNMENT                                   */
+/* ---------------------------------------------------- */
+
+.baseline-demo {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.baseline-icon {
+    font-size: 2rem;
+    vertical-align: baseline;
+}
+
+/* ---------------------------------------------------- */
+/* ESCALA TIPOGRÀFICA REM                              */
+/* ---------------------------------------------------- */
+
+.scale.s1 { font-size: 0.875rem; }
+.scale.s2 { font-size: 1rem; }
+.scale.s3 { font-size: 1.25rem; }
+.scale.s4 { font-size: 1.5rem; }
+
+/* Exemple de contrast */
+.contrast-box {
+    background: #111;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* ---------------------------------------------------- */
+/* MATERIAL ICONS VARIABLE                              */
+/* ---------------------------------------------------- */
+
+.icons-row {
+    display: flex;
+    gap: 40px;
+}
+
+.var-icon {
+    font-size: 48px;
+}
+
+/* ---------------------------------------------------- */
+/* BOTONS I LINKS AMB ICONA                             */
+/* ---------------------------------------------------- */
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #004cff;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-icon:hover {
+    background: #0026a3;
+}
+
+.link-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #004cff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.link-icon:hover {
+    color: #0026a3;
+}
+
+/* ---------------------------------------------------- */
+/* TAULA DE COLORS                                      */
+/* ---------------------------------------------------- */
+
+.colors-table {
+    display: flex;
+    gap: 40px;
+}
+
+.color-cell {
+    text-align: center;
+}
+
+.color-sample {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }

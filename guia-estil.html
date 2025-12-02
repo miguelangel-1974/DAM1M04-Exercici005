@@ -1,19 +1,154 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="UTF-8">
-        <title>Pagina guia</title>
-        <link rel="stylesheet" href="estils.css">
-    </head>
-    <body>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Guia d'Estil</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estils.css">
+</head>
 
-        <!-- MENÚ LATERAL -->
-        <div class="menu-lateral">
-            <h2>Menú</h2>
-            <a href="index.html">Inici</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="guia-estil.html">Guia-Estils</a>
-        </div>
-        
-    </body>
+<body>
+
+    <!-- MENÚ LATERAL -->
+    <div class="menu-lateral">
+        <h2>Menú</h2>
+        <a href="index.html">Inici</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="guia-estil.html">Guia-Estils</a>
+    </div>
+
+    <div class="contenidor estil">
+
+        <h1 class="titol-estil">Guia d’Estil — Tipografia i Icones</h1>
+
+        <!-- ============================================= -->
+        <!-- MOSTRARI DE FONTS -->
+        <!-- ============================================= -->
+        <section class="caixa-estil">
+            <h2>Mostrari de tipografies</h2>
+
+            <h1 class="font-test">Títol H1 — Raleway 700</h1>
+            <h2 class="font-test2">Títol H2 — Raleway 600</h2>
+            <h3 class="font-test3">Títol H3 — Raleway 400</h3>
+
+            <p class="par-test">
+                Paràgraf normal amb line-height 1.7, mida 1rem, letter-spacing 0.5px.
+            </p>
+
+            <p class="par-test-bold">
+                Paràgraf bold — 700 — mida 1.1rem.
+            </p>
+
+            <p class="par-test-light">
+                Paràgraf light — 300 — line-height ampliat.
+            </p>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- ALINEACIÓ ICONES + TEXT -->
+        <!-- ============================================= -->
+        <section class="caixa-estil">
+            <h2>Alineació al baseline amb icones</h2>
+
+            <p class="baseline-demo">
+                <span class="material-symbols-rounded baseline-icon">favorite</span>
+                Text alineat amb la icona al mateix baseline.
+            </p>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- ESCALA TIPOGRÀFICA REM + ACCESSIBILITAT -->
+        <!-- ============================================= -->
+        <section class="caixa-estil">
+            <h2>Escala Tipogràfica (rem)</h2>
+
+            <p class="scale s1">0.875rem — text petit (mínim accessible)</p>
+            <p class="scale s2">1rem — base</p>
+            <p class="scale s3">1.25rem — subtítol</p>
+            <p class="scale s4">1.5rem — destacat</p>
+
+            <p class="contrast-box">Exemple de contrast: fons fosc + text blanc (contrast ADA correcte).</p>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- MATERIAL ICONS VARIABLE -->
+        <!-- ============================================= -->
+        <section class="caixa-estil">
+            <h2>Material Icons — variacions</h2>
+
+            <div class="icons-row">
+                <div>
+                    <span class="material-symbols-rounded var-icon"
+                          style="font-variation-settings:'wght' 200, 'opsz' 24, 'FILL' 0;">
+                        home
+                    </span>
+                    <p>wght 200 • opsz 24 • FILL 0</p>
+                </div>
+
+                <div>
+                    <span class="material-symbols-rounded var-icon"
+                          style="font-variation-settings:'wght' 700, 'opsz' 40, 'FILL' 1;">
+                        home
+                    </span>
+                    <p>wght 700 • opsz 40 • FILL 1</p>
+                </div>
+
+                <div>
+                    <span class="material-symbols-rounded var-icon"
+                          style="font-variation-settings:'wght' 400, 'opsz' 48, 'FILL' 0;">
+                        home
+                    </span>
+                    <p>wght 400 • opsz 48 • FILL 0</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- BOTONS ICONA + TEXT -->
+        <!-- ============================================= -->
+        <section class="caixa-estil">
+            <h2>Botons amb icona + text</h2>
+
+            <button class="btn-icon">
+                <span class="material-symbols-rounded">send</span>
+                Enviar
+            </button>
+
+            <a href="#" class="link-icon">
+                <span class="material-symbols-rounded">link</span>
+                Enllaç útil
+            </a>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- COLORS -->
+        <!-- ============================================= -->
+        <section class="caixa-estil">
+            <h2>Taula de colors</h2>
+
+            <div class="colors-table">
+                <div class="color-cell">
+                    <div class="color-sample" style="background:#ff0000;"></div>
+                    <p>HEX: #ff0000</p>
+                    <p>RGB: rgb(255,0,0)</p>
+                    <p>HSL: hsl(0,100%,50%)</p>
+                    <p>Alpha: rgba(255,0,0,0.5)</p>
+                </div>
+
+                <div class="color-cell">
+                    <div class="color-sample" style="background:#00a2ff;"></div>
+                    <p>HEX: #00a2ff</p>
+                    <p>RGB: rgb(0,162,255)</p>
+                    <p>HSL: hsl(198,100%,50%)</p>
+                    <p>Alpha: rgba(0,162,255,0.5)</p>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+</body>
 </html>
