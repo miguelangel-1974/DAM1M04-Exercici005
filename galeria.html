@@ -1,19 +1,74 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="UTF-8">
-        <title>Pagina galeria</title>
-        <link rel="stylesheet" href="estils.css">
-    </head>
-    <body>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina galeria</title>
+    <link rel="stylesheet" href="estils.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+</head>
 
-        <!-- MENÚ LATERAL -->
-        <aside class="menu-lateral">
-            <h2>Menú</h2>
-            <a href="index.html">Inici</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="guia-estil.html">Guia-Estils</a>
-        </aside>
+<body>
 
-    </body>
+    <!-- MENÚ LATERAL -->
+    <div class="menu-lateral">
+        <h2>Menú</h2>
+        <a href="index.html">Inici</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="guia-estil.html">Guia-Estils</a>
+    </div>
+
+    <!-- CONTENIDO GALERIA -->
+    <div class="contenidor galeria">
+        <h1 class="titol-galeria">Galeria</h1>
+        <section class="targetes-galeria columna">
+            <!-- 1 — Loader -->
+            <div class="caixa-galeria anim1">
+                <h1>¡Cargando juegos!</h1>
+                <h3>Actualmente estamos teniendo problemas, lamentamos la demora.</h3>
+                <br>
+                <div class="loader"></div>
+                <br>
+                <img src="assets/img/play_station_logo.png">
+            </div>
+            <!-- 2 — Animación principal -->
+            <div class="caixa-galeria anim2">
+                <h3>¡Puedes ver este cuadrado animado que cambia de color mientras esperas!</h3>
+                <h3>¡A ver si puedes adivinar cuantos colores tiene!</h3>
+                <br><br>
+                <div class="bloc-animat"></div>
+                <br>
+            </div>
+            <!-- 3 — Scroll reveal 1 -->
+            <div class="caixa-galeria scroll-reveal">
+                <h1>Proximamente en Diciembre</h1>
+                <h3>!Nuevos juegos disponibles del mes totalmente gratuitos!</h3>
+                <h3>¿A que esperas para conseguir el tuyo?</h3>
+                <br>
+                <img src="assets/img/R6_img.jpg" class="galeria-img">
+                <br><br>
+            </div>
+            <!-- 4 — Scroll reveal 2 -->
+            <div class="caixa-galeria scroll-reveal">
+                <h1>Proximas actualizaciones</h1>
+                <h3>¡Actualizacion de Fortnite, nuva temporada ya disponible!</h3>
+                <h3>¿A que esperas? ¡Vamos actualiza ya!</h3>
+                <br>
+                <img src="assets/img/fortnite.jpeg" class="galeria-img">
+                <br><br>
+            </div>
+            <!-- 5 — Scroll reveal 3 -->
+            <div class="caixa-galeria scroll-reveal">
+                <h1>¡Proximamente!</h1>
+                <h3>¡Nuevo sorteazo de navidad!</h3>
+                <h3>Se sortearan 20 juegazos del mes para todos los que querais juegos gratis.</h3>
+                <h3>Si quieres un juego gratis no te olvides de inscribirte antes del 20 de diciembre.</h3>
+                <br>
+                <img src="assets/img/gta5.jpeg" class="galeria-img">
+                <br><br>
+            </div>
+        </section>
+
+    </div>
+
+</body>
 </html>
