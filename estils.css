@@ -107,6 +107,36 @@ body {
     background: #8f8f8f;
 }
 
+.caixa:hover .img-default {
+    opacity: 0;
+}
+
+.caixa:hover .img-hover {
+    opacity: 1;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-container img {
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: opacity 1.5s;
+    margin: auto;
+}
+
+.img-hover {
+    opacity: 0; /* inicialmente invisible */
+}
+
 /* ---------------------------------------------------- */
 /* FUNCIONS DE TEMPS DE TRANSICIÓ                       */
 /* ---------------------------------------------------- */
